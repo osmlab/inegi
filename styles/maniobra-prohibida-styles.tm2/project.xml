@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#000000">
+
+<Parameters>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">-101.1803,20.5969,21</Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="maxzoom">21</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///ruben.c27b3a24,ruben.686def29]]></Parameter>
+</Parameters>
+
+
+<Style name="data" filter-mode="first">
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="rgba(8, 8, 8, 0.5)" />
+  </Rule>
+</Style>
+<Layer name="data"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>data</StyleName>  </Layer>
+
+<Style name="manproh" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke="rgba(85, 204, 85, 0.5)" />
+    <MarkersSymbolizer transform="scale(1.25)" file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="10" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>5000</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke="rgba(85, 204, 85, 0.5)" />
+    <MarkersSymbolizer transform="scale(1)" file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="10" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke="rgba(85, 204, 85, 0.5)" />
+    <MarkersSymbolizer transform="scale(0.75)" file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="10" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke="rgba(85, 204, 85, 0.5)" />
+    <MarkersSymbolizer file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="10" />
+  </Rule>
+</Style>
+<Layer name="manproh"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>manproh</StyleName>  </Layer>
+
+</Map>

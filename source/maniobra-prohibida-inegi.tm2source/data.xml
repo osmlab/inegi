@@ -3,22 +3,22 @@
 <Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
 
 <Parameters>
-  <Parameter name="center">-98.5693,19.7441,10</Parameter>
+  <Parameter name="center">-101.1818,20.5956,14</Parameter>
   <Parameter name="format">pbf</Parameter>
-  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"bridges","description":"","fields":{"ogc_fid":"Number","nombre":"String","tipo":"String"}}]}]]></Parameter>
-  <Parameter name="maxzoom">16</Parameter>
-  <Parameter name="minzoom">5</Parameter>
-  <Parameter name="name"><![CDATA[inegi-bridge-v2]]></Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"manproh","description":"","fields":{"ogc_fid":"Number","calirepr":"String"}}]}]]></Parameter>
+  <Parameter name="maxzoom">14</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="name"><![CDATA[maniobra-prohibida-inegi-v2]]></Parameter>
 </Parameters>
 
 
-<Layer name="bridges"
+<Layer name="manproh"
   buffer-size="8"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     
     <Datasource>
        <Parameter name="dbname"><![CDATA[dbinegiv3]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
+       <Parameter name="extent"><![CDATA[-13035946.9332858 1651411.88728074,-9664371.20936388 3851573.1888348]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
        <Parameter name="geometry_table"><![CDATA[]]></Parameter>
        <Parameter name="host"><![CDATA[localhost]]></Parameter>
@@ -26,7 +26,7 @@
        <Parameter name="max_size"><![CDATA[512]]></Parameter>
        <Parameter name="password"><![CDATA[1234]]></Parameter>
        <Parameter name="port"><![CDATA[5432]]></Parameter>
-       <Parameter name="table"><![CDATA[(SELECT ogc_fid, wkb_geometry, nombre, tipo FROM red_vial_puente) as data]]></Parameter>
+       <Parameter name="table"><![CDATA[(SELECT ogc_fid, wkb_geometry,  calirepr  FROM maniobra_prohibida) as data]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="user"><![CDATA[postgres]]></Parameter>
     </Datasource>

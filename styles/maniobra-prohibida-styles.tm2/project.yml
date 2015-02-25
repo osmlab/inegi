@@ -1,0 +1,25 @@
+_prefs: 
+  mapid: ''
+  saveCenter: true
+_properties: {}
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -101.1803
+  - 20.5969
+  - 21
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 21
+minzoom: 0
+name: ''
+source: "mapbox:///ruben.c27b3a24,ruben.686def29"
+styles: 
+  - style.mss
+template: ''
