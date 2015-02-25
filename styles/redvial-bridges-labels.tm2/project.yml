@@ -1,0 +1,25 @@
+_prefs: 
+  mapid: ruben.eb229f02
+  saveCenter: true
+_properties: {}
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -99.3624
+  - 18.5918
+  - 13
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 17
+minzoom: 5
+name: redvial-bridges-labels-v2
+source: "mapbox:///ruben.c27b3a24,ruben.2762bf34"
+styles: 
+  - style.mss
+template: ''

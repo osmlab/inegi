@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="center">-101.9174,21.0396,9</Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"data","description":"","fields":{"ogc_fid":"Number","tipo_vial":"String","nombre":"String","circula":"String","desc_sup":"String","carriles":"String","estatus":"String","nivel":"Number","peaje":"String","dato":"String","velocidad":"Number","length":"Number","ancho":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">14</Parameter>
+  <Parameter name="minzoom">5</Parameter>
+  <Parameter name="name"><![CDATA[inegi--source-v2]]></Parameter>
+</Parameters>
+
+
+<Layer name="data"
+  buffer-size="8"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[dbinegiv3]]></Parameter>
+       <Parameter name="extent"><![CDATA[-13038040.0288399 1638463.48037682,-9656239.88686571 3857954.93823224]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[ogc_fid]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="table"><![CDATA[(SELECT ogc_fid, tipo_vial, nombre, circula,desc_sup, carriles,
+estatus, nivel, peaje, dato, velocidad, length, ancho, wkb_geometry
+FROM red_vial
+WHERE wkb_geometry && !bbox! AND CASE
+WHEN  z(!scale_denominator!)=5 AND length > zres(5)  THEN TRUE
+WHEN  z(!scale_denominator!)=6 AND length > zres(5)  THEN TRUE
+WHEN  z(!scale_denominator!)=7 AND length > zres(7) THEN TRUE
+WHEN  z(!scale_denominator!)=8 AND length > zres(8) THEN TRUE
+WHEN  z(!scale_denominator!)=9 AND length > zres(9)  THEN TRUE
+WHEN  z(!scale_denominator!)=10 AND length > zres(10)  THEN TRUE
+WHEN  z(!scale_denominator!)=10 AND length > zres(10)  THEN TRUE
+WHEN  z(!scale_denominator!)=11 AND length > zres(11)  THEN TRUE
+WHEN  z(!scale_denominator!)>=12 THEN TRUE
+END
+) AS data]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>

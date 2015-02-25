@@ -1,0 +1,63 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: ruben.c27b3a24
+  rev: s-9191fabe
+  saveCenter: true
+attribution: ''
+center: 
+  - -101.9174
+  - 21.0396
+  - 9
+description: ''
+Layer: 
+  - id: data
+    Datasource: 
+      dbname: dbinegiv3
+      extent: -13038040.0288399 1638463.48037682,-9656239.88686571 3857954.93823224
+      geometry_field: wkb_geometry
+      geometry_table: ''
+      host: localhost
+      key_field: ogc_fid
+      max_size: 512
+      password: 1234
+      port: 5432
+      table: |-
+        (SELECT ogc_fid, tipo_vial, nombre, circula,desc_sup, carriles,
+        estatus, nivel, peaje, dato, velocidad, length, ancho, wkb_geometry
+        FROM red_vial
+        WHERE wkb_geometry && !bbox! AND CASE
+        WHEN  z(!scale_denominator!)=5 AND length > zres(5)  THEN TRUE
+        WHEN  z(!scale_denominator!)=6 AND length > zres(5)  THEN TRUE
+        WHEN  z(!scale_denominator!)=7 AND length > zres(7) THEN TRUE
+        WHEN  z(!scale_denominator!)=8 AND length > zres(8) THEN TRUE
+        WHEN  z(!scale_denominator!)=9 AND length > zres(9)  THEN TRUE
+        WHEN  z(!scale_denominator!)=10 AND length > zres(10)  THEN TRUE
+        WHEN  z(!scale_denominator!)=10 AND length > zres(10)  THEN TRUE
+        WHEN  z(!scale_denominator!)=11 AND length > zres(11)  THEN TRUE
+        WHEN  z(!scale_denominator!)>=12 THEN TRUE
+        END
+        ) AS data
+      type: postgis
+      user: postgres
+    description: ''
+    fields: 
+      ancho: Number
+      carriles: String
+      circula: String
+      dato: String
+      desc_sup: String
+      estatus: String
+      length: Number
+      nivel: Number
+      nombre: String
+      ogc_fid: Number
+      peaje: String
+      tipo_vial: String
+      velocidad: Number
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+maxzoom: 14
+minzoom: 5
+name: inegi--source-v2
