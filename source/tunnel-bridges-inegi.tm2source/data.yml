@@ -1,20 +1,20 @@
 _prefs: 
   disabled: []
   inspector: false
-  mapid: ruben.beb1480d
-  rev: s-3c75b468
+  mapid: ruben.b2018778
+  rev: s-a20285be
   saveCenter: true
 attribution: ''
 center: 
-  - -98.5693
-  - 19.7441
-  - 10
+  - -97.9486
+  - 18.138
+  - 8
 description: ''
 Layer: 
-  - id: bridges
+  - id: tunelbridge
     Datasource: 
       dbname: dbinegiv3
-      extent: -20037508.34,-20037508.34,20037508.34,20037508.34
+      extent: -13023324.7021649 1643067.95898489,-9981823.33070332 3856390.09103837
       geometry_field: wkb_geometry
       geometry_table: ''
       host: localhost
@@ -22,11 +22,12 @@ Layer:
       max_size: 512
       password: 1234
       port: 5432
-      table: (SELECT ogc_fid, wkb_geometry, nombre, tipo FROM red_vial_puente) as data
+      table: (SELECT ogc_fid, wkb_geometry, tipo, nombre, ancho FROM tunel_puente) as data
       type: postgis
       user: postgres
     description: ''
     fields: 
+      ancho: String
       nombre: String
       ogc_fid: Number
       tipo: String
@@ -34,5 +35,5 @@ Layer:
       "buffer-size": 8
     srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
 maxzoom: 16
-minzoom: 5
-name: inegi-bridge-v2
+minzoom: 0
+name: tunnel-bridges-inegi-v2

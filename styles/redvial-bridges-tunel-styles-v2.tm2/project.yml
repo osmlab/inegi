@@ -1,5 +1,5 @@
 _prefs: 
-  mapid: ruben.e0d143f6
+  mapid: ruben.75f47451
   saveCenter: true
 _properties: {}
 attribution: ''
@@ -9,17 +9,17 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -100.3479
-  - 19.4275
-  - 15
+  - -100.3821
+  - 20.463
+  - 7
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
 layers: null
-maxzoom: 22
+maxzoom: 17
 minzoom: 5
-name: redvial-bridges-styles-v2
-source: "mapbox:///ruben.c27b3a24,ruben.2762bf34"
+name: redvial-bridges-tunel-styles-v2
+source: "mapbox:///ruben.c27b3a24,ruben.beb1480d,ruben.b2018778"
 styles: 
   - style.mss
 template: ''

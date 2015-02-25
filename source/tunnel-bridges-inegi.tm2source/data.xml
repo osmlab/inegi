@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="center">-97.9486,18.138,8</Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"tunelbridge","description":"","fields":{"ogc_fid":"Number","tipo":"String","nombre":"String","ancho":"String"}}]}]]></Parameter>
+  <Parameter name="maxzoom">16</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="name"><![CDATA[tunnel-bridges-inegi-v2]]></Parameter>
+</Parameters>
+
+
+<Layer name="tunelbridge"
+  buffer-size="8"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[dbinegiv3]]></Parameter>
+       <Parameter name="extent"><![CDATA[-13023324.7021649 1643067.95898489,-9981823.33070332 3856390.09103837]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[wkb_geometry]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[ogc_fid]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[1234]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="table"><![CDATA[(SELECT ogc_fid, wkb_geometry, tipo, nombre, ancho FROM tunel_puente) as data]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[postgres]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
