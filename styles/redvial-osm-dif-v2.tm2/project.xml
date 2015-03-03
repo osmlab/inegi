@@ -4,12 +4,12 @@
 
 <Parameters>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-100.3821,20.463,7</Parameter>
+  <Parameter name="center">-99.4922,19.2308,8</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
-  <Parameter name="maxzoom">17</Parameter>
-  <Parameter name="minzoom">5</Parameter>
-  <Parameter name="name"><![CDATA[redvial-bridges-tunel-styles-v2]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///ruben.c27b3a24,ruben.beb1480d,ruben.b2018778]]></Parameter>
+  <Parameter name="maxzoom">19</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="name"><![CDATA[redvial-osm-diff-v2]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///ruben.c27b3a24,enf.y4dyrpb9,ruben.beb1480d,ruben.b2018778]]></Parameter>
 </Parameters>
 
 
@@ -17,161 +17,217 @@
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#ffff00" />
     <MarkersSymbolizer transform="scale(1.25)" file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#ffff00" />
     <MarkersSymbolizer transform="scale(1)" file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#ffff00" />
     <MarkersSymbolizer transform="scale(0.75)" file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2" stroke="#ffff00" />
     <MarkersSymbolizer file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2" stroke="#ffff00" />
     <MarkersSymbolizer file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="1.8" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="1.8" stroke="#ffff00" />
     <MarkersSymbolizer file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="1.5" stroke="#ffff00" />
     <MarkersSymbolizer file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="1" stroke="#ffff00" />
     <MarkersSymbolizer file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="0.9" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="0.9" stroke="#ffff00" />
     <MarkersSymbolizer file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="0.8" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="0.8" stroke="#ffff00" />
     <MarkersSymbolizer file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="0.7" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="0.7" stroke="#ffff00" />
     <MarkersSymbolizer file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="0.6" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="0.6" stroke="#ffff00" />
     <MarkersSymbolizer file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="0.5" stroke="#ffff00" />
     <MarkersSymbolizer file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([circula] = 'Un sentido')</Filter>
-    <LineSymbolizer stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke="#ffff00" />
     <MarkersSymbolizer file="img/oneway20X8_y.svg" allow-overlap="true" ignore-placement="true" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <LineSymbolizer stroke-width="3" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#ffff00" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2" stroke="#ffff00" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2" stroke="#ffff00" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1.8" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="1.8" stroke="#ffff00" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1.5" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="1.5" stroke="#ffff00" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="1" stroke="#ffff00" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="0.9" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="0.9" stroke="#ffff00" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="0.8" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="0.8" stroke="#ffff00" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="0.7" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="0.7" stroke="#ffff00" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="0.6" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="0.6" stroke="#ffff00" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="0.5" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="0.5" stroke="#ffff00" />
   </Rule>
   <Rule>
     <MinScaleDenominator>25000000</MinScaleDenominator>
-    <LineSymbolizer stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke="#ffff00" />
   </Rule>
 </Style>
 <Layer name="data"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>data</StyleName>  </Layer>
+
+<Style name="osm" filter-mode="first" comp-op="dst-out">
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="4" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="7" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="8" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="10" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <LineSymbolizer stroke-width="12" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>5000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="15" />
+  </Rule>
+</Style>
+<Layer name="osm"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>osm</StyleName>  </Layer>
 
 <Style name="bridges" filter-mode="first">
   <Rule>

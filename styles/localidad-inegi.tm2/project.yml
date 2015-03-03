@@ -1,0 +1,25 @@
+_prefs: 
+  mapid: ruben.5f876c3a
+  saveCenter: true
+_properties: {}
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -101.0632
+  - 20.0714
+  - 7
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 17
+minzoom: 0
+name: localidad-inegi-v2
+source: "mapbox:///ruben.2649a2ce"
+styles: 
+  - style.mss
+template: ''

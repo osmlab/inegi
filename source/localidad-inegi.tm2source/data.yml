@@ -1,0 +1,38 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: ruben.2649a2ce
+  rev: s-6f8cd7af
+  saveCenter: true
+attribution: ''
+center: 
+  - -101.7279
+  - 20.9948
+  - 6
+description: ''
+Layer: 
+  - id: localidad
+    Datasource: 
+      dbname: dbinegiv3
+      extent: -13035775.8924345 1638463.48037682,-9656239.88686571 3857340.45690135
+      geometry_field: wkb_geometry
+      geometry_table: ''
+      host: localhost
+      key_field: ogc_fid
+      max_size: 512
+      password: 1234
+      port: 5432
+      table: (SELECT ogc_fid, wkb_geometry, tipo, nombre  FROM localidad) as data
+      type: postgis
+      user: postgres
+    description: ''
+    fields: 
+      nombre: String
+      ogc_fid: Number
+      tipo: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over
+maxzoom: 14
+minzoom: 0
+name: localidad-inegi-v2

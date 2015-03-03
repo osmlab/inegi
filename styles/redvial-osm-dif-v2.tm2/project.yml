@@ -1,0 +1,25 @@
+_prefs: 
+  mapid: ruben.4e9a9fe9
+  saveCenter: true
+_properties: {}
+attribution: ''
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -99.4922
+  - 19.2308
+  - 8
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 19
+minzoom: 0
+name: redvial-osm-diff-v2
+source: "mapbox:///ruben.c27b3a24,enf.y4dyrpb9,ruben.beb1480d,ruben.b2018778"
+styles: 
+  - style.mss
+template: ''
