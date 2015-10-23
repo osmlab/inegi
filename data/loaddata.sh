@@ -12,8 +12,6 @@ do
     do
         ogr2ogr -update -append $geofile.shp $j -f "esri shapefile" -nln $geofile 
     done
-    #
-
     rm -R $geofile
     rm *.zip
     ## Merge the shp file
@@ -22,5 +20,6 @@ do
 done
 
 ogr2ogr -clipsrc limites/limites.shp clip-states.shp states.shp
-shp2pgsql -I -s 4326 -W "latin1" clip-states.shp states | psql -d dbmx
+#shp2pgsql -I -s 4326 -W "latin1" states.shp states | psql -d dbmx
+ogr2ogr -f PostgreSQL -nlt MULTILINESTRING -t_srs EPSG:3857 PG:'user=postgres host=localhost dbname=dbmx' states.shp
 exit 0
