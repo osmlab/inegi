@@ -19,7 +19,7 @@ do
     rm $geofile.*
 done
 
-ogr2ogr -clipsrc limites/limites.shp clip-states.shp states.shp
+ogr2ogr -clipsrc limites/limites.shp mx.shp states.shp
 #shp2pgsql -I -s 4326 -W "latin1" states.shp states | psql -d dbmx
-ogr2ogr -f PostgreSQL -nlt MULTILINESTRING -t_srs EPSG:3857 PG:'user=postgres host=localhost dbname=dbmx' states.shp
+ogr2ogr -f PostgreSQL -nlt MULTILINESTRING -t_srs EPSG:3857 PG:'user=postgres host=localhost dbname=dbmx' mx.shp
 exit 0
