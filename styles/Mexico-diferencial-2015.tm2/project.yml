@@ -1,0 +1,29 @@
+_prefs: 
+  mapid: ruben.f0f2a255
+  saveCenter: true
+_properties: 
+  bridge: 
+    "group-by": layer
+attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -98.57
+  - 18.9009
+  - 12
+description: ''
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 22
+minzoom: 0
+name: Mexico Diferencial 2015
+source: "mapbox:///mapbox.satellite,ruben.c27b3a24,ruben.mxlocalidades,mapbox.mapbox-streets-v5"
+styles: 
+  - mx.mss
+  - satelite.mss
+  - name.mss
+template: ''
