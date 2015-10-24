@@ -11,8 +11,8 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -99.6227
-  - 19.344
+  - -100.4274
+  - 21.0433
   - 12
 description: ''
 format: "png8:m=h"
@@ -21,7 +21,7 @@ layers: null
 maxzoom: 22
 minzoom: 0
 name: Mexico Diferencial 2015
-source: "mapbox:///mapbox.satellite,ruben.mxlocalidades,ruben.c27b3a24,mapbox.mapbox-streets-v5"
+source: "mapbox:///mapbox.satellite,ruben.c27b3a24,ruben.mxlocalidades,mapbox.mapbox-streets-v5"
 styles: 
   - mx.mss
   - satelite.mss

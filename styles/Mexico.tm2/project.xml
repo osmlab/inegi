@@ -5,23 +5,18 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-99.6227,19.344,12</Parameter>
+  <Parameter name="center">-100.4274,21.0433,12</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[Mexico Diferencial 2015]]></Parameter>
-  <Parameter name="source"><![CDATA[mapbox:///mapbox.satellite,ruben.mxlocalidades,ruben.c27b3a24,mapbox.mapbox-streets-v5]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///mapbox.satellite,ruben.c27b3a24,ruben.mxlocalidades,mapbox.mapbox-streets-v5]]></Parameter>
 </Parameters>
 
 
-<Style name="mapbox_satellite_full" filter-mode="first" image-filters="scale-hsla(0.2,0.1,0,0.1,0,0.4,0,1)">
-  <Rule>
-    <RasterSymbolizer opacity="1" />
-  </Rule>
-</Style>
 <Layer name="mapbox_satellite_full"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>mapbox_satellite_full</StyleName>  </Layer>
+      </Layer>
 
 <Layer name="mapbox_satellite_plus"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
@@ -31,60 +26,9 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
       </Layer>
 
-<Style name="mapbox_satellite_watermask" filter-mode="first" image-filters="scale-hsla(0.2,0.1,0,0.1,0,0.4,0,1)">
-  <Rule>
-    <RasterSymbolizer opacity="1" />
-  </Rule>
-</Style>
 <Layer name="mapbox_satellite_watermask"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>mapbox_satellite_watermask</StyleName>  </Layer>
-
-<Style name="inegi" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750</MaxScaleDenominator>
-    <TextSymbolizer size="18" face-name="Source Sans Pro Regular" placement="line" fill="#ffffff" halo-fill="#000000" halo-radius="1" dy="-12" avoid-edges="true" ><![CDATA[[NOMVIAL]]]></TextSymbolizer>
-    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <MinScaleDenominator>750</MinScaleDenominator>
-    <TextSymbolizer size="10" face-name="Source Sans Pro Regular" placement="line" fill="#ffffff" halo-fill="#000000" halo-radius="1" dy="-12" avoid-edges="true" ><![CDATA[[NOMVIAL]]]></TextSymbolizer>
-    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
-    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1.5" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <LineSymbolizer stroke-width="1" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <LineSymbolizer stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-</Style>
-<Layer name="inegi"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>inegi</StyleName>  </Layer>
+      </Layer>
 
 <Style name="data" filter-mode="first">
   <Rule>
@@ -149,6 +93,52 @@
 <Layer name="data"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>data</StyleName>  </Layer>
+
+<Style name="inegi" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>750</MaxScaleDenominator>
+    <TextSymbolizer size="18" face-name="Source Sans Pro Regular" placement="line" fill="#ffffff" halo-fill="#000000" halo-radius="1" dy="-12" avoid-edges="true" ><![CDATA[[NOMVIAL]]]></TextSymbolizer>
+    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
+    <MinScaleDenominator>750</MinScaleDenominator>
+    <TextSymbolizer size="10" face-name="Source Sans Pro Regular" placement="line" fill="#ffffff" halo-fill="#000000" halo-radius="1" dy="-12" avoid-edges="true" ><![CDATA[[NOMVIAL]]]></TextSymbolizer>
+    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1.5" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <LineSymbolizer stroke-width="1" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <LineSymbolizer stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+</Style>
+<Layer name="inegi"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>inegi</StyleName>  </Layer>
 
 <Layer name="landuse"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
