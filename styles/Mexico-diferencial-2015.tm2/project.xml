@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-93.3455,18.2604,14</Parameter>
+  <Parameter name="center">-98.57,18.9009,12</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -97,12 +97,54 @@
 <Style name="inegi" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>750</MaxScaleDenominator>
+    <Filter>([namemx] != 'N/D') and ([namemx] != 'N/A') and ([namemx] != 'NINGUNO') and ([namemx] != 'NO APLICA')</Filter>
     <TextSymbolizer size="18" face-name="Source Sans Pro Regular" placement="line" fill="#ffffff" halo-fill="#000000" halo-radius="1" dy="-12" avoid-edges="true" ><![CDATA[[NOMVIAL]]]></TextSymbolizer>
     <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MaxScaleDenominator>1500</MaxScaleDenominator>
     <MinScaleDenominator>750</MinScaleDenominator>
+    <Filter>([namemx] != 'N/D') and ([namemx] != 'N/A') and ([namemx] != 'NINGUNO') and ([namemx] != 'NO APLICA')</Filter>
+    <TextSymbolizer size="14" face-name="Source Sans Pro Regular" placement="line" fill="#ffffff" halo-fill="#000000" halo-radius="1" dy="-12" avoid-edges="true" ><![CDATA[[NOMVIAL]]]></TextSymbolizer>
+    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MinScaleDenominator>1500</MinScaleDenominator>
+    <Filter>([namemx] != 'N/D') and ([namemx] != 'N/A') and ([namemx] != 'NINGUNO') and ([namemx] != 'NO APLICA')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>25000</MinScaleDenominator>
+    <Filter>([namemx] != 'N/D') and ([namemx] != 'N/A') and ([namemx] != 'NINGUNO') and ([namemx] != 'NO APLICA')</Filter>
+    <LineSymbolizer stroke-width="1.5" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([namemx] != 'N/D') and ([namemx] != 'N/A') and ([namemx] != 'NINGUNO') and ([namemx] != 'NO APLICA')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>100000</MinScaleDenominator>
+    <Filter>([namemx] != 'N/D') and ([namemx] != 'N/A') and ([namemx] != 'NINGUNO') and ([namemx] != 'NO APLICA')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([namemx] != 'N/D') and ([namemx] != 'N/A') and ([namemx] != 'NINGUNO') and ([namemx] != 'NO APLICA')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>400000</MinScaleDenominator>
+    <Filter>([namemx] != 'N/D') and ([namemx] != 'N/A') and ([namemx] != 'NINGUNO') and ([namemx] != 'NO APLICA')</Filter>
+    <LineSymbolizer stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>25000</MaxScaleDenominator>
     <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
@@ -238,12 +280,7 @@
     <LineSymbolizer stroke-width="15" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
     <MinScaleDenominator>750</MinScaleDenominator>
-    <LineSymbolizer stroke-width="16" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
-    <MinScaleDenominator>25000000</MinScaleDenominator>
     <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>

@@ -1,18 +1,8 @@
-# Create map from INEGI data
+# Create MBTiles from INEGI-CGU data
 
-#### create Data Base
-
-```
-#psql -U postgres -c "create database dbmx;"
-psql -U postgres -c "create database dbmx;"
-psql -U postgres -d dbmx -f /usr/share/postgresql/9.3/contrib/postgis-2.1/postgis.sql 
-psql -U postgres -d dbmx -f /usr/share/postgresql/9.3/contrib/postgis-2.1/spatial_ref_sys.sql
-```
-
-#### Get shp files  and build
+#### Get SHP files and build a SHP
 
 `./loaddata.sh url`
-
 
 Output : **states.shp**
 
@@ -21,9 +11,5 @@ Output : **states.shp**
 `ogr2ogr -f GeoJSON -t_srs crs:84 states.geojson states.shp`
 
 #### Convert geojson to mbtiles
-
-`tippecanoe -l inegi -n way -o mxlocalidades.mbtiles -z16 -Z12 -pscfkr states.geojson`
-
-#### Red Vial
 
 `tippecanoe -l inegi -n way -o mxlocalidades.mbtiles -z16 -Z12 -pscfkr states.geojson`

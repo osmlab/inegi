@@ -3,7 +3,7 @@
     [zoom <= 19] {      
       line-join: round;
       line-cap: round;
-      [zoom = 19] { line-width: 16; comp-op: dst-out;}
+      //[zoom = 19] { line-width: 16; comp-op: dst-out;}
       [zoom = 18] { line-width: 15; comp-op: dst-out;}
       [zoom = 17] { line-width: 14; comp-op: dst-out;}
       [zoom = 16] { line-width: 10; comp-op: dst-out;}

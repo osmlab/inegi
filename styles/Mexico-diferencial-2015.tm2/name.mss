@@ -4,14 +4,15 @@
 @sans: 'Source Sans Pro Regular';
 //inegi capa de localidades
 #inegi{
-  [zoom >19] {
+  [zoom >18][namemx!='N/D'][namemx!='N/A'][namemx!='NINGUNO'][namemx!='NO APLICA'] {
   text-name: @namemx;
   text-face-name: @sans;
   text-placement: line; 
   text-fill: @text;
   text-halo-fill:#000;
   text-halo-radius:1;
-  [zoom >=20] {  text-size: 18;}
+  [zoom = 19]{text-size: 14;}
+  [zoom >= 20]{text-size: 18;}
  //text-dx:-5;
   text-dy:-12;
   text-avoid-edges: true; 
