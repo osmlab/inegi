@@ -1,9 +1,8 @@
-# Compare INEGI(CGU,RNC) and OpenStreetMap
+## Compare INEGI(CGU,RNC) and OpenStreetMap data
 
 #### Build MBTiles
 
 Create MBTiles from CGU,RNC data. [here](https://github.com/osmlab/inegi/tree/master/data)
-
 
 #### Create Styles for diff map
 
