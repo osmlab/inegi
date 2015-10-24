@@ -1,12 +1,10 @@
-@name: '[dato]';  
+@namemx: '[NOMVIAL]';  
 @text: #fff;
 // Fonts //
 @sans: 'Source Sans Pro Regular';
-@sans_italic: 'Source Sans Pro Italic';
-@sans_bold: 'Source Sans Pro Semibold';
-#red{
+#inegi{
   [zoom >=13] {
-  text-name: @name;
+  text-name: @namemx;
   text-face-name: @sans;
   text-placement: line; 
   text-fill: @text;

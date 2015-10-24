@@ -10,9 +10,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -1.9116
-  - 47.7984
-  - 5
+  - -99.112
+  - 19.4613
+  - 18
 description: ''
 format: "png8:m=h"
 interactivity_layer: ''
@@ -20,7 +20,7 @@ layers: null
 maxzoom: 22
 minzoom: 0
 name: ''
-source: "mapbox:///mapbox.mapbox-streets-v5"
+source: "mapbox:///mapbox.mapbox-streets-v5,ruben.mxlocalidades"
 styles: 
   - style.mss
   - names.mss
