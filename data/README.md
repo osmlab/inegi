@@ -2,7 +2,7 @@
 
 #### Get SHP files and build a SHP
 
-`./loaddata.sh url`
+`./buildshp.sh url`
 
 Output : **states.shp**
 
@@ -13,3 +13,6 @@ Output : **states.shp**
 #### Convert geojson to mbtiles
 
 `tippecanoe -l inegi -n way -o mxlocalidades.mbtiles -z16 -Z12 -pscfkr states.geojson`
+
+
+# Create MBTiles from INEGI-RNC data
