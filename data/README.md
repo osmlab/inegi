@@ -1,4 +1,4 @@
-# Create map from inegi data
+# Create map from INEGI data
 
 #### create Data Base
 
@@ -14,7 +14,7 @@ psql -U postgres -d dbmx -f /usr/share/postgresql/9.3/contrib/postgis-2.1/spatia
 `./loaddata.sh url`
 
 
-Output = states.shp
+Output : **states.shp**
 
 #### Conver shp to geojson
 
@@ -22,6 +22,8 @@ Output = states.shp
 
 #### Convert geojson to mbtiles
 
-`tippecanoe -l inegi -n way -o mx.mbtiles -z8 -Z16 -pscfkr states.geojson`
+`tippecanoe -l inegi -n way -o mxlocalidades.mbtiles -z16 -Z12 -pscfkr states.geojson`
 
+#### Red Vial
 
+`tippecanoe -l inegi -n way -o mxlocalidades.mbtiles -z16 -Z12 -pscfkr states.geojson`
