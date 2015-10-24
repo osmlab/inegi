@@ -36,8 +36,8 @@
 //data, capa de red vial
 #data{
   line-color: #ffff00;
- // line-join: round;
- // line-cap: round;
+  line-join: round;
+  line-cap: round;
   [zoom=5] {line-width:0.5;}
   [zoom=6] {line-width:0.6;}
   [zoom=7] {line-width:0.7;}
