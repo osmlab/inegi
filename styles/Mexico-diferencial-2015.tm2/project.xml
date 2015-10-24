@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-100.4274,21.0433,12</Parameter>
+  <Parameter name="center">-93.3455,18.2604,14</Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
   <Parameter name="minzoom">0</Parameter>
@@ -101,14 +101,8 @@
     <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>1500</MaxScaleDenominator>
-    <MinScaleDenominator>750</MinScaleDenominator>
-    <TextSymbolizer size="10" face-name="Source Sans Pro Regular" placement="line" fill="#ffffff" halo-fill="#000000" halo-radius="1" dy="-12" avoid-edges="true" ><![CDATA[[NOMVIAL]]]></TextSymbolizer>
-    <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <MinScaleDenominator>1500</MinScaleDenominator>
+    <MinScaleDenominator>750</MinScaleDenominator>
     <LineSymbolizer stroke-width="2" stroke="#ffff00" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
